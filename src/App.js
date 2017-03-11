@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Picture from './Picture'
 import './App.css';
+import Button from './Button'
+
 
 class App extends Component {
 
@@ -31,7 +33,10 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
+            <Button text-on="yes" text-off="OFF"></Button>
+            <Button text-on="yes" text-off="no"></Button>
         </div>
+          <div id="root"></div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
