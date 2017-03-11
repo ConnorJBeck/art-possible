@@ -2,22 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class Picture extends Component {
 
 
   render() {
+      const { url, x, y } = this.props;
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <img src={url} style={{position: 'absolute', top: y, left: x }} />
     );
   }
 }
 
-export default App;
+export default Picture;
