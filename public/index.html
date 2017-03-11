@@ -14,6 +14,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+        function timedRefresh(timeoutPeriod) {
+            setTimeout("location.reload(true);",timeoutPeriod);
+        }
+
+        location.onload = timedRefresh(30000);
+    </script>
   </head>
   <body>
     <div id="root"></div>

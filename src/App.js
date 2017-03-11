@@ -122,13 +122,13 @@ class App extends Component {
     }
 
     displayPicture() {
-        this.setState({pictureInformation: "renderNothing"});
+        window.location.href = 'http://art-e-motion.blogspot.ca/';
     }
 
     renderNothing() {
         return (
             <div className="picInfo">
-                <h1>Picture information for {this.props.index}</h1>
+                <h1>Picture information for TODO</h1>
                 <ul>
                     <li>Creator: TODO</li>
                     <li>Location TODO:</li>
