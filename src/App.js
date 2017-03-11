@@ -16,7 +16,7 @@ class App extends Component {
         const dirname = "/art/";
         let pictureGallery = [];
         let newString = "";
-        for (let i = 1; i < 7; i++) {
+        for (let i = 1; i < 13; i++) {
             newString = dirname + "image" + i + ".jpg";
             console.log(newString);
             pictureGallery.push(newString);
@@ -49,8 +49,9 @@ class App extends Component {
 
   renderPictures() {
       const pictureGallery = this.state.pictureGallery;
+      let x = 100;
       return pictureGallery.map((url, index) => (
-          <Picture key={index} url={url} x={100} y={200}/>
+          <Picture key={index} url={url} x={x} y={200}/>
       ));
   }
 }
