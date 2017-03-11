@@ -9,7 +9,11 @@ class App extends Component {
 
     constructor (props) {
         super(props);
-        this.state = { pictureGallery : App.initPictureGallery() }
+        this.state = {
+            pictureGallery : App.initPictureGallery(),
+            pictureInformation: null
+        }
+        this.displayPicture = this.displayPicture.bind(this);
     }
 
     static initPictureGallery() {
@@ -61,7 +65,6 @@ class App extends Component {
 
 
     return (
-
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -80,12 +83,27 @@ class App extends Component {
     );
   }
 
+    displayPicture() {
+        this.setState({pictureInformation: "renderNothing"});
+    }
   renderPictures() {
       const pictureGallery = this.state.pictureGallery;
       let x = 100;
       return pictureGallery.map((url, index) => (
-          <Picture key={index} url={url} x={x} y={200}/>
+          <Picture onClick={this.displayPicture} key={index} url={url} x={x} y={200}/>
       ));
+  }
+  renderNothing() {
+        return (
+            <div className="picInfo">
+                <h1>Picture information for {this.props.index}</h1>
+                <ul>
+                    <li>Creator: TODO</li>
+                    <li>Location TODO:</li>
+                    <li>Personal Website: TODO</li>
+                </ul>
+            </div>
+        )
   }
 }
 

@@ -16,7 +16,7 @@ class Button extends React.Component {
                     location.reload();
                 }
                 if (this.props['function'] == "preference")
-                    alert("preference");
+                    console.log("preference");
             }
         }
         this.setState(prevState => ({
