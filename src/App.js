@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Picture from './Picture'
 import './App.css';
 import Button from './Button'
@@ -110,7 +109,7 @@ class App extends Component {
             <div className="App-main">
                 {
                     pictures.map((image, index) => (
-                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/3} />
+                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/2.5} />
                     ))
                 }
             </div>
