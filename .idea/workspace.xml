@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a61733d-6b14-43f3-8372-6ac264548fac" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/French Ecluse w.jpg" afterPath="$PROJECT_DIR$/public/art/French Ecluse w.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Glads W.jpg" afterPath="$PROJECT_DIR$/public/art/Glads W.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Granite Falls W.jpg" afterPath="$PROJECT_DIR$/public/art/Granite Falls W.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Irises W.JPG" afterPath="$PROJECT_DIR$/public/art/Irises W.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/NightsongW.JPG" afterPath="$PROJECT_DIR$/public/art/NightsongW.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Obiw.jpg" afterPath="$PROJECT_DIR$/public/art/Obiw.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Splash w.JPG" afterPath="$PROJECT_DIR$/public/art/Splash w.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/Still Waters W.jpg" afterPath="$PROJECT_DIR$/public/art/Still Waters W.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/aerie W.jpg" afterPath="$PROJECT_DIR$/public/art/aerie W.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/ballerina W.JPG" afterPath="$PROJECT_DIR$/public/art/ballerina W.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/wBeck_R_Poppies_31.5x39_Acrylic on Canvas_1200 copy.jpg" afterPath="$PROJECT_DIR$/public/art/wBeck_R_Poppies_31.5x39_Acrylic on Canvas_1200 copy.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/art/yellow beach house W.jpg" afterPath="$PROJECT_DIR$/public/art/yellow beach house W.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Picture.js" afterPath="$PROJECT_DIR$/src/Picture.js" />
-    </list>
+    <list default="true" id="9a61733d-6b14-43f3-8372-6ac264548fac" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +52,8 @@
       <file leaf-file-name="Picture.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Picture.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -604,12 +588,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489257102549</updated>
-      <workItem from="1489257104250" duration="2919000" />
+      <workItem from="1489257104250" duration="3058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2919000" />
+    <option name="totallyTimeSpent" value="3058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -686,8 +670,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Picture.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
