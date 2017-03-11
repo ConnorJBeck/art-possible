@@ -66,8 +66,8 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
-            <Button text-on="yes" text-off="OFF"></Button>
-            <Button text-on="yes" text-off="no"></Button>
+            <Button function="reload" text="reload"></Button>
+            <Button function="preference" text="preference"></Button>
         </div>
           <div id="root"></div>
         <p className="App-intro">

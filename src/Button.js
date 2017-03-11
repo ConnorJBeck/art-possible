@@ -10,6 +10,15 @@ class Button extends React.Component {
     }
 
     handleClick() {
+        {
+            if (this.state.isToggleOn) {
+                if (this.props['function'] == "reload") {
+                    location.reload();
+                }
+                if (this.props['function'] == "preference")
+                    alert("preference");
+            }
+        }
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
         }));
@@ -18,7 +27,7 @@ class Button extends React.Component {
     render() {
         return (
             <button onClick={this.handleClick}>
-                {this.state.isToggleOn ? this.props['text-on'] : this.props['text-off']}
+                {this.props['text']}
             </button>
         );
     }
