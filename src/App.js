@@ -15,13 +15,46 @@ class App extends Component {
     static initPictureGallery() {
         const dirname = "/art/";
         let pictureGallery = [];
-        let newString = "";
-        for (let i = 1; i < 13; i++) {
-            newString = dirname + "image" + i + ".jpg";
+        let numArray = [];
+        let newString;
+        let numImages = 12;
+        let num;
+
+        for (let i = 1; i <= numImages; i++) {
+            let found = false
+            while (!found) {
+                num = Math.floor(Math.random() * numImages) + 1;
+                if (!numArray.includes(num)) {
+                    numArray.push(num);
+                    found = true;
+                }
+            }
+
+            newString = dirname + "image" + num + ".jpg";
             console.log(newString);
             pictureGallery.push(newString);
         }
+
         return pictureGallery;
+    }
+
+    static shuffle(array) {
+        let currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.ceil(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
     }
 
   render() {
