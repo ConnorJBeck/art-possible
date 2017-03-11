@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import Picture from './Picture'
 import './App.css';
 import Button from './Button'
@@ -13,8 +14,10 @@ class App extends Component {
             pictures : [],
             count: 0,
             width : '0px',
-            height : '0px'
+            height : '0px',
+            pictureInformation: null
         };
+        this.displayPicture = this.displayPicture.bind(this);
         this.loadImage = this.loadImage.bind(this);
         this.loadPictures = this.loadPictures.bind(this);
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
@@ -81,17 +84,21 @@ class App extends Component {
     }
 
   render() {
-      return (
+
+
+    return (
       <div className="App">
         <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
             <Button function="reload" text="reload"></Button>
             <Button function="preference" text="preference"></Button>
         </div>
           <div id="root"></div>
+
             {
                 this.loadPictures()
             }
-
       </div>
     );
   }
@@ -105,14 +112,29 @@ class App extends Component {
             <div className="App-main">
                 {
                     pictures.map((image, index) => (
-                        <Picture key={index} url={image.src} height={height/3} />
+                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/3} />
                     ))
                 }
             </div>
         );
     }
 
+    displayPicture() {
+        this.setState({pictureInformation: "renderNothing"});
+    }
 
+    renderNothing() {
+        return (
+            <div className="picInfo">
+                <h1>Picture information for {this.props.index}</h1>
+                <ul>
+                    <li>Creator: TODO</li>
+                    <li>Location TODO:</li>
+                    <li>Personal Website: TODO</li>
+                </ul>
+            </div>
+        )
+    }
 }
 
 export default App;
