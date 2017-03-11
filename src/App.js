@@ -89,8 +89,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
             <Button function="reload" text="reload"></Button>
             <Button function="preference" text="preference"></Button>
         </div>

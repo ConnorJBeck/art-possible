@@ -9,13 +9,13 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 30px;
+  padding: 10px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.App-main {
+  background-image : url("http://www.kjprofit.com/wp-content/uploads/2017/02/amazing-white-wall-textures-best-gallery-design-ideas.jpg");
 }
 
 @keyframes App-logo-spin {
