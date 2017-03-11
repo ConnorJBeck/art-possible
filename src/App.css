@@ -24,8 +24,9 @@
 }
 .header-right {
   position: absolute;
+  color: black;
   right: 40px;
-  width: 130px
+  width: 140px
 }
 
 .App-main {

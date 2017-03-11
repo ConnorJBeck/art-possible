@@ -93,6 +93,7 @@ class App extends Component {
             </div>
             <div className="header-right">
                 <Button function="reload" text="reload"></Button>
+                d
                 <Button function="preference" text="preference"></Button>
             </div>
         </div>
@@ -114,7 +115,7 @@ class App extends Component {
             <div className="App-main">
                 {
                     pictures.map((image, index) => (
-                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/2.5} />
+                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/4} />
                     ))
                 }
             </div>
