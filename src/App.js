@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Picture from './Picture'
 import './App.css';
 import Button from './Button'
@@ -49,12 +48,13 @@ class App extends Component {
             <Button function="preference" text="preference"></Button>
         </div>
           <div id="root"></div>
-        <p className="App-intro">
 
+        <p className="App-main">
+            {
+                this.renderPictures()
+            }
         </p>
-          {
-              this.renderPictures()
-          }
+
       </div>
     );
   }

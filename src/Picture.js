@@ -8,7 +8,7 @@ class Picture extends Component {
   render() {
       const { url, x, y } = this.props;
     return (
-      <img src={url} alt="" style={{position: 'relative', height: '350px', paddingRight:'100px' }} />
+      <img src={url} alt="" style={{position: 'relative', height: '350px', paddingTop: "20px", paddingRight:'100px' }} />
     );
   }
 }
