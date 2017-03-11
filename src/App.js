@@ -7,11 +7,24 @@ class App extends Component {
 
     constructor (props) {
         super(props);
-        this.state = { pictureGallery : ['/art/aerie W.jpg', 'url2'] }
+        this.state = { pictureGallery : App.initPictureGallery() }
+    }
+
+    static initPictureGallery() {
+        const dirname = "/art/";
+        let pictureGallery = [];
+        let newString = "";
+        for (let i = 1; i < 7; i++) {
+            newString = dirname + "image" + i + ".jpg";
+            console.log(newString);
+            pictureGallery.push(newString);
+        }
+        return pictureGallery;
     }
 
   render() {
-        const pictureGallery = this.state.pictureGallery;
+
+
     return (
 
       <div className="App">
@@ -23,12 +36,17 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
           {
-              pictureGallery.map((url, index) => (
-                  <Picture key={index} url={url} x={100} y={200}/>
-              ))
+              this.renderPictures()
           }
       </div>
     );
+  }
+
+  renderPictures() {
+      const pictureGallery = this.state.pictureGallery;
+      return pictureGallery.map((url, index) => (
+          <Picture key={index} url={url} x={100} y={200}/>
+      ));
   }
 }
 
