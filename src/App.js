@@ -88,8 +88,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-            <Button function="reload" text="reload"></Button>
-            <Button function="preference" text="preference"></Button>
+            <div className="header-left">
+            ART POSSIBLE
+            </div>
+            <div className="header-right">
+                <Button function="reload" text="reload"></Button>
+                <Button function="preference" text="preference"></Button>
+            </div>
         </div>
           <div id="root"></div>
 

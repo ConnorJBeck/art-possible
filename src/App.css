@@ -12,10 +12,27 @@
   height: 22px;
   padding: 10px;
   color: white;
+  size: 10px;
+}
+
+.header-left {
+  position: absolute;
+  font-family: "Arial", Arial, sans-serif;
+  font-size : 25px;
+  left: 5px;
+  width: 200px
+}
+.header-right {
+  position: absolute;
+  right: 40px;
+  width: 130px
 }
 
 .App-main {
   background-image : url("http://www.kjprofit.com/wp-content/uploads/2017/02/amazing-white-wall-textures-best-gallery-design-ideas.jpg");
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
