@@ -6,10 +6,10 @@ class Picture extends Component {
 
 
   render() {
-      const { url, x, y } = this.props;
-    return (
-      <img src={url} alt="" style={{position: 'relative', height: '350px', paddingTop: "20px", paddingRight:'100px' }} />
-    );
+      const { url, height } = this.props;
+      return (
+        <img src={url} alt="" style={{position: 'relative', height: height + 'px', paddingTop: "20px", paddingRight:'100px' }} />
+      );
   }
 }
 

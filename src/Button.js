@@ -12,10 +12,10 @@ class Button extends React.Component {
     handleClick() {
         {
             if (this.state.isToggleOn) {
-                if (this.props['function'] == "reload") {
+                if (this.props['function'] === "reload") {
                     location.reload();
                 }
-                if (this.props['function'] == "preference")
+                if (this.props['function'] === "preference")
                     alert("preference");
             }
         }
