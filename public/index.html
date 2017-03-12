@@ -14,6 +14,17 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      img {
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+      }
+
+      img:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+      }
+    </style>
     <script>
         function timedRefresh(timeoutPeriod) {
             setTimeout("location.reload(true);",timeoutPeriod);
