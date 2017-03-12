@@ -92,9 +92,9 @@ class App extends Component {
             ART POSSIBLE
             </div>
             <div className="header-right">
-                <Button function="reload" text="reload"></Button>
+                <Button function="reload" text="Reload"></Button>
                 d
-                <Button function="preference" text="preference"></Button>
+                <Button function="preference" text="Preferences"></Button>
             </div>
         </div>
           <div id="root"></div>
@@ -113,6 +113,7 @@ class App extends Component {
         }
         return (
             <div className="App-main">
+
                 {
                     pictures.map((image, index) => (
                         <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/4} />
