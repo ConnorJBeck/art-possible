@@ -15,7 +15,7 @@ class Button extends React.Component {
                 if (this.props['function'] === "reload") {
                     location.reload();
                 }
-               if (this.props['function'] == "preference")
+               if (this.props['function'] === "preference")
                     console.log("preference");
 
             }
