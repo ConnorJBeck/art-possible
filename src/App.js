@@ -116,7 +116,7 @@ class App extends Component {
 
                 {
                     pictures.map((image, index) => (
-                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/4} />
+                        <Picture onClick={this.displayPicture} key={index} url={image.src} height={height/4.1} />
                     ))
                 }
             </div>
