@@ -41,7 +41,7 @@ class App extends Component {
         let pictureGallery = [];
         let numArray = [];
         let newImgURL;
-        let numImages = 23;
+        let numImages = 22;
         let num;
 
         for (let i = 1; i <= numImages; i++) {
